@@ -37,9 +37,9 @@ public class Sabot implements Iterable<Carte>{
             throw new NoSuchElementException("Sabot vide : impossible de piocher");
         }
         Iterator<Carte> it = iterator() ;
-        Carte c = it.next();
+        Carte carte = it.next();
         it.remove();
-        return c;
+        return carte;
     }
 	
 	@Override
